@@ -1,10 +1,9 @@
-var http = require('http');
+var express = require('express');
+var app = express();
 var port = 3000;
-var requestHandler = function(request, response){
-    console.log('New request to: ' + request.url);
-    response.end('Hello, World!');
-}
-var server = http.createServer(requestHandler);
-server.listen(port, function(){
-    console.log('listening on port ' + port);
-   });
+app.get('/', function(request, response){
+    response.send('Hello, World!');
+});
+app.listen(port, function(){
+    console.log('Express app listening on port ' + port);
+});

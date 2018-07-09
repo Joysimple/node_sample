@@ -1,10 +1,11 @@
 {
   "name": "my_server",
   "version": "1.0.0",
-  "description": "working with node",
+  "description": "My first Express project",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Joysimple/node_sample/issues"
   },
-  "homepage": "https://github.com/Joysimple/node_sample#readme"
+  "homepage": "https://github.com/Joysimple/node_sample#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
